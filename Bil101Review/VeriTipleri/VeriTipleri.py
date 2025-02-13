@@ -1,4 +1,4 @@
-# Tamsayı
+#Tamsayı
 x=2
 #float
 y=2.0
