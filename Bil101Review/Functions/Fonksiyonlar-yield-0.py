@@ -6,6 +6,7 @@ def genfunc():
 def write(X):
     print(X)
 a = genfunc()
-a.__next__()
+print(a.__next__())
 write("Ara fasıl")
-a.__next__()
+y=a.__next__()
+print(y)
