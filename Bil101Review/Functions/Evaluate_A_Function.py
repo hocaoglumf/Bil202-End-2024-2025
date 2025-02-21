@@ -1,7 +1,3 @@
-
-
-
-
 def Func(x):
     print (x)
     return x
