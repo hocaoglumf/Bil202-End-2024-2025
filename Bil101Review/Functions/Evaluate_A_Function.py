@@ -1,9 +1,9 @@
 def Func(x):
-    print (x)
-    return x
-liste={"1":Func(1)}
+    print (x,"  ",x**2)
+    return x**2
 
-liste["1"]
+liste={"3":Func(3)}
 
+print(liste["3"])
 
 eval("Func(2)")

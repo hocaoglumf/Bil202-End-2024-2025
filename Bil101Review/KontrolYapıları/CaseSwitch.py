@@ -1,4 +1,3 @@
-
 def number_to_string(argument):
     match argument:
         case 0:
@@ -10,6 +9,6 @@ def number_to_string(argument):
         case default:
             return "birşey"
 
-
 head = number_to_string(2)
 print(head)
+print(number_to_string)

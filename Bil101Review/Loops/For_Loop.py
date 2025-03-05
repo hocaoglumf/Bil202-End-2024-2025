@@ -12,3 +12,6 @@ for i in L:
     print(i)
     if (type(i)==int):
         print(i**2)
+
+for i in range(0,10):
+    print(i)

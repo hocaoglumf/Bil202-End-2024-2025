@@ -16,3 +16,6 @@ c="Merhaba"
 l=[1,2,3,4]
 # Sözlük
 s={"a":1,"b":2,"c":3}
+
+print(list(s.keys()))
+print(list(s.values()))

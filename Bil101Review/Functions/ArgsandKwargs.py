@@ -1,6 +1,10 @@
 # *args örnek
 def fun(*args):
+    print(args)
     return sum(args)
+
+def fun2(L):
+    return sum(L)
 
 print(fun(1, 2, 3, 4))
 print(fun(5, 10, 15))
