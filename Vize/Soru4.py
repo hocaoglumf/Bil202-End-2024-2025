@@ -11,19 +11,21 @@ class Arac:
         return 0
 
 class Araba(Arac):
+
     def __init__(self):
         super().__init__()
         self.yakit=10
 
     def YakitIkmali(self,y):
         self.yakit +=y
+        return self.yakit
 
 class Bisiklet(Arac):
     def __init__(self):
         super().__init__()
 
 araba0=Araba()
-araba0.ad="Honda"
+araba0.ad="myHonda"
 araba0.YakitIkmali(20)
 
 bisiklet0=Bisiklet()

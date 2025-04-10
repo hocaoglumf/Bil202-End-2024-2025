@@ -54,6 +54,7 @@ class Giysi(Urun):
         return self.temelFiyat*.90
 
 k0=Kitap()
+k0.isim="Yüzüklerin Efendisi"
 k0.temelFiyat=10
 
 k1=Kitap()

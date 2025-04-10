@@ -20,7 +20,11 @@ class Agac:
         else:
             left=self.sol.Topla()
             right=self.sag.Topla()
-            return self.value + left+right
+            return self.value +math.log(self.value)+ left+right
+
+    def SetNodes(self,left,right):
+        self.sol=left
+        self.sag=right
 
 a0=Agac()
 a0.value=1
@@ -37,8 +41,9 @@ a5.value=12
 a6=Agac()
 a6.value=10
 
-a0.sol=a1
-a0.sag=a2
+#a0.sol=a1
+#a0.sag=a2
+a0.SetNodes(a1,a2)
 a1.sol=a3
 a1.sag=a4
 a2.sol=a5
