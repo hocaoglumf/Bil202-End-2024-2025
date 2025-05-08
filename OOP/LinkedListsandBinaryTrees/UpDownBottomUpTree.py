@@ -32,6 +32,17 @@ class MyNode:
             value +=self.parent.BottomUp()
         return value
 
+    def Leaf(self):
+        return len(self.__children)==0
+
+    @staticmethod
+    def LeafSum(L):
+        tpl=0
+        for i in L:
+            tpl +=i.Leaf() and i.BottomUp()
+        return tpl
+
+
 n0=MyNode()
 n1=MyNode()
 n2=MyNode()
@@ -58,11 +69,13 @@ n2.Attach(n6)
 h=n0.GetChildrenValue()
 print(h)
 
-print(n0.TopDown())
+print("Top Down: ",n0.TopDown())
 
 
-print(n6.BottomUp())
+print("Bottom Up",n6.BottomUp())
 
 
-liste=[n0, n1,n2,n3,n4,n5,n6]
+liste=[n0, n5, n1,n2,n3,n4,n6]
+
+print("From Leaves: ",MyNode.LeafSum(liste))
 
