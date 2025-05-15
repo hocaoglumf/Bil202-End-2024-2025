@@ -193,10 +193,7 @@ class Test:
         return perfM
 
 
-#test0= Test()
+test0= Test()
 
-#test0.Test()
-#test0.ShowPerformanceMatrix()
-
-t=MergeSort()
-t.Sort([4,2,5,1])
+test0.Test()
+test0.ShowPerformanceMatrix()
