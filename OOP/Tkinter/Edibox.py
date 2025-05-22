@@ -9,7 +9,7 @@ pencere.title("EditBox'larda Liste Öğeleri")
 
 # Listedeki her bir öğe için bir Entry (editbox) oluştur ve yerleştir
 for oge in veri_listesi:
-    entry = tk.Entry(pencere, width=30)
+    entry = tk.Entry(pencere, width=50)
     entry.pack(padx=10, pady=5)
     entry.insert(0, oge)  # Entry içine veri yerleştir
 

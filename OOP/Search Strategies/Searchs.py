@@ -25,7 +25,7 @@ class Search:
         for neighbor in self.graph[start]:
             if neighbor not in visited:
                 self.dfs(neighbor, visited)
-        print(' ')
+
 
 # Example graph (undirected)
 graph = {
@@ -43,3 +43,5 @@ print('BFS')
 search.bfs('A')
 print('DFS')
 search.dfs('A')
+
+
